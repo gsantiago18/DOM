@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Manipulando el DOM en Javascript</title>
     <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
   </head>
   <body>
     <h1 id="title">ManipulandoDOM </h1>
@@ -37,6 +38,49 @@
       <input type="text"  id="fiterInput" placeholder="Añade un item a la lista">
       <button id="addButton">Añadir</button>
       <ul id="dynamicList"></ul>
+    </div>
+
+    <div id="draggable" draggable="true" ></div>
+    <div id="dropzone">Zona  para soltar</div>
+
+    <div id="opacidad">
+      Opacidad:
+      <select name="opcadidad" id="opc">
+      <option value="70">70 %</option>
+      <option value="80">80 %</option>
+      <option value="90">90 %</option>
+    </select>
+   <!-- Modal de la tabla -->
+<div id="myModal" class="modal">
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <h3>Tabla de opacidades:</h3>
+    <table id="tabla-opacidades">
+      <tr>
+        <th>Opacidad</th>
+        <th>Descripción</th>
+      </tr>
+      <tr>
+        <td>70%</td>
+        <td>Opacidad baja</td>
+      </tr>
+      <tr>
+        <td>80%</td>
+        <td>Opacidad media</td>
+      </tr>
+      <tr>
+        <td>90%</td>
+        <td>Opacidad alta</td>
+      </tr>
+    </table>
+    <br>
+    Desea asumir el sobre Costo ??<br>
+    <button id="btnSi">Sí</button>
+    <button id="btnNo">No</button>
+  </div>
+</div>
+
+    
     </div>
 
     <script type="module" src="/main.js"></script>
